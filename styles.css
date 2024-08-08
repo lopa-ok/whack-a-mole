@@ -1,0 +1,39 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#score {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #8B4513;
+    position: relative;
+    cursor: pointer;
+}
+
+.hole.active::before {
+    content: '🐹';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 60px;
+}
